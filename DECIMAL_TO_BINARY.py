@@ -1,0 +1,9 @@
+dec_n=int (input("Enter the number: "))
+binary_num=0
+i=0
+while(dec_n !=0):
+    remainder = dec_n%2
+    binary_num = binary_num + int(remainder) * (10**i)
+    dec_n=dec_n/2
+    i=i+1
+print("the binary equivalent = ",binary_num)
